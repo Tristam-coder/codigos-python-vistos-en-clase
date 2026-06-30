@@ -1,45 +1,37 @@
-# TODO 1: crea total con el valor inicial 0.0.
-total =
+total = 0.0
 
-# TODO 2: crea valid_count con el valor inicial 0.
-valid_count =
+valid_count = 0
 
-# TODO 3: crea attempt_count con el valor inicial 0.
-attempt_count =
+attempt_count = 0
 
-# TODO 4: crea un while True.
+while True:
 
+    entrada = input("Ingresa un número o 'salir': ")
 
-# TODO 5: dentro del while, solicita un número o la palabra "salir".
+    if entrada.lower() == "salir":
+        break
 
+    attempt_count += 1
 
-# TODO 6: si la entrada en minúsculas es "salir", termina con break.
+    try:
+        num = float(entrada)
+        total += num
+        valid_count += 1
+    except ValueError:
+        print("Entrada inválida.")
+    finally:
+        print("Intento procesado.")
 
+try:
+    promedio = total / valid_count
+except ZeroDivisionError:
+    print("No se ingresaron números válidos.")
+else:
+    print("Promedio:", promedio)
+finally:
+    print("Proceso de promedio terminado.")
 
-# TODO 7: aumenta attempt_count en 1 usando +=.
-
-
-# TODO 8: crea un bloque try que convierta la entrada a float,
-# sume el número a total y aumente valid_count.
-
-
-# TODO 9: agrega except ValueError y muestra "Entrada inválida.".
-
-
-# TODO 10: agrega finally y muestra "Intento procesado.".
-
-
-# TODO 11: después del while, intenta calcular total / valid_count.
-
-
-# TODO 12: captura ZeroDivisionError y muestra "No se ingresaron números válidos.".
-
-
-# TODO 13: usa else para mostrar el promedio.
-
-
-# TODO 14: usa finally para mostrar "Proceso de promedio terminado.".
-
-
-# TODO 15: muestra total, valid_count y attempt_count.
+print("Total:", total)
+print("Números válidos:", valid_count)
+print("Intentos:", attempt_count)
 
