@@ -1,29 +1,37 @@
-def calculate_subtotal(price, quantity):
-    return price * quantity
+# TODO 1: define calculate_subtotal con los parámetros price y quantity.
+# Debe devolver price multiplicado por quantity.
 
-def calculate_tax(subtotal, tax_rate=0.18):
-    return subtotal * tax_rate
 
-def calculate_total(subtotal, tax):
-    return subtotal + tax
+# TODO 2: define calculate_tax con los parámetros subtotal y tax_rate.
+# tax_rate debe tener 0.18 como valor por defecto.
+# Debe devolver subtotal multiplicado por tax_rate.
 
-def show_receipt(product, subtotal, tax, total):
-    print("Producto:", product)
-    print("Subtotal:", subtotal)
-    print("Impuesto:", tax)
-    print("Total:", total)
 
-product = "Cuaderno"
+# TODO 3: define calculate_total con los parámetros subtotal y tax.
+# Debe devolver la suma de subtotal y tax.
 
-subtotal = calculate_subtotal(7.5, 4)
 
-tax = calculate_tax(subtotal)
+# TODO 4: define show_receipt con product, subtotal, tax y total.
+# Debe mostrar los cuatro valores.
 
-total = calculate_total(subtotal, tax)
 
-show_receipt(product, subtotal, tax, total)
+# TODO 5: crea el producto "Cuaderno".
+product =
 
-custom_tax = calculate_tax(subtotal, 0.10)
+# TODO 6: llama a calculate_subtotal con 7.5 y 4.
+subtotal =
 
-print("Impuesto personalizado:", custom_tax)
+# TODO 7: llama a calculate_tax usando su porcentaje por defecto.
+tax =
+
+# TODO 8: llama a calculate_total.
+total =
+
+# TODO 9: llama a show_receipt.
+
+
+# TODO 10: llama a calculate_tax con subtotal y 0.10.
+custom_tax =
+
+# TODO 11: muestra el impuesto personalizado.
 
